@@ -59,7 +59,7 @@ export default function CartContent() {
       {cart.length === 0 ? (
         <div className="flex flex-col items-center justify-center h-full  text-gray-500">
           <FaShoppingCart className="text-4xl mb-3" />
-          <p className="text-lg font-medium">Your cart is empty</p>
+          <p className="text-lg font-medium">Your cart is empty!</p>
         </div>
       ) : (
         cart.map((item) => (

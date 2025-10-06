@@ -21,7 +21,7 @@ const AdminLayout = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed md:static top-0 left-0 min-h-screen w-72  bg-gray-900 z-30 transform ${
+        className={`fixed md:static top-0 left-0 min-h-screen shadow-md w-64  bg-gray-200 z-30 transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300`}
       >

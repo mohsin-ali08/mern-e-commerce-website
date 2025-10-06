@@ -28,7 +28,7 @@ const OrderManagement = () => {
       <h2 className="text-xl sm:text-2xl font-bold mb-6">
         Order Management
       </h2>
-      <div className="overflow-x-auto shadow-md sm:rounded-lg">
+      <div className="overflow-x-auto shadow sm:rounded-lg">
         <table className="min-w-full text-left text-gray-600">
           <thead className="bg-gray-100 text-xs uppercase text-gray-700">
             <tr>

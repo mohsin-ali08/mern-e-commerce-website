@@ -49,14 +49,14 @@ const EditProductPage = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 shadow-lg rounded-lg bg-white">
-      <h2 className="text-3xl font-bold mb-6 text-gray-800">Edit Product</h2>
+    <div className="max-w-4xl mx-auto p-6 shadow rounded-lg bg-gray-50">
+      <h2 className="text-3xl font-bold mb-6 text-gray-800">Edit Product!</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Product Name */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Product Name
+            Product Name:
           </label>
           <input
             type="text"
@@ -64,7 +64,7 @@ const EditProductPage = () => {
             value={productData.name}
             onChange={handleChange}
             placeholder="Enter product name"
-            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+            className="w-full border outline-none border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             required
           />
         </div>
@@ -79,7 +79,7 @@ const EditProductPage = () => {
             value={productData.description}
             onChange={handleChange}
             placeholder="Enter product description"
-            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+            className="w-full border outline-none border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             rows={4}
             required
           />
@@ -96,7 +96,7 @@ const EditProductPage = () => {
               name="price"
               value={productData.price}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
               required
             />
           </div>
@@ -110,7 +110,7 @@ const EditProductPage = () => {
               name="countInStock"
               value={productData.countInStock}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
               required
             />
           </div>
@@ -126,7 +126,7 @@ const EditProductPage = () => {
               value={productData.sku}
               onChange={handleChange}
               placeholder="Unique SKU"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -140,7 +140,7 @@ const EditProductPage = () => {
               value={productData.category}
               onChange={handleChange}
               placeholder="Product category"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -152,7 +152,7 @@ const EditProductPage = () => {
               value={productData.brand}
               onChange={handleChange}
               placeholder="Brand name"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
         </div>
@@ -176,7 +176,7 @@ const EditProductPage = () => {
                 })
               }
               placeholder="e.g. S, M, L, XL"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -197,7 +197,7 @@ const EditProductPage = () => {
                 })
               }
               placeholder="e.g. Red, Blue, Black"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
         </div>
@@ -213,7 +213,7 @@ const EditProductPage = () => {
               name="collections"
               value={productData.collections}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -226,7 +226,7 @@ const EditProductPage = () => {
               name="materials"
               value={productData.materials}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
 
@@ -239,7 +239,7 @@ const EditProductPage = () => {
               name="gender"
               value={productData.gender}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+              className="w-full outline-none border border-gray-300 rounded-md p-2 focus:ring-1 focus:ring-blue-500"
             />
           </div>
         </div> */}
@@ -253,7 +253,7 @@ const EditProductPage = () => {
             type="file"
             accept="image/*"
             onChange={handleImageUpload}
-            className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 
+            className="block w-full outline-none text-sm text-gray-500 file:mr-4 file:py-2 
               file:px-4 file:rounded-md file:border-0 file:text-sm 
               file:font-semibold file:bg-blue-50 file:text-blue-600 
               hover:file:bg-blue-100"
@@ -276,7 +276,7 @@ const EditProductPage = () => {
         {/* Submit */}
         <button
           type="submit"
-          className="mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded-md transition"
+          className="mt-6 w-full outline-none bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded-md transition"
         >
           Save Product
         </button>

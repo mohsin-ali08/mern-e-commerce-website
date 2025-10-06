@@ -19,18 +19,18 @@ const AdminSidebar = ({ closeSidebar }) => {
   ];
 
   return (
-    <div className="min-h-screen w-64 bg-gray-900 md:pt-10  p-6 flex flex-col shadow-lg">
+    <div className="min-h-screen w-64 bg-gray-200 md:pt-10  p-6 flex flex-col">
       <div className="mb-6 ">
         <Link
           to="/admin"
           onClick={closeSidebar}
-          className="text-2xl text-white font-bold"
+          className="text-2xl text-black font-bold"
         >
           Rabbit 
         </Link>
       </div>
 
-        <h2 className="text-gray-200 text-xl font-medium border-b pb-2">Admin dashboard</h2>
+        <h2 className="text-black text-xl font-medium border-b border-gray-400 pb-2">Admin dashboard</h2>
       {/* Navigation */}
       <nav className="flex flex-col  md:justify-center md:pt-2 pt-10 space-y-4 flex-1">
         {links.map(({ to, label, icon }) => (
@@ -41,8 +41,8 @@ const AdminSidebar = ({ closeSidebar }) => {
             className={({ isActive }) =>
               `flex items-center border-b gap-2 py-3 px-4 transition-all ${
                 isActive
-                  ? "bg-gray-700 text-white"
-                  : "text-gray-300 hover:bg-gray-800 hover:text-white"
+                  ? "bg-gray-700 rounded-lg text-white"
+                  : "text-black hover:bg-gray-700 rounded-lg hover:text-white"
               }`
             }
           >
