@@ -1,3 +1,4 @@
+
 const express =require("express"); 
 const cors =require("cors");
 const dotenv =require("dotenv");
@@ -6,8 +7,7 @@ const userRoutes =require("./routes/userRoutes");
 const productRoutes =require("./routes/productRoutes");
 const cartRoutes =require("./routes/cartRoutes");
 const checkoutRoutes =require("./routes/checkoutRoutes");
-
-
+const orderRoutes =require("./routes/orderRoutes");
 
 
 const app = express();
@@ -29,6 +29,7 @@ app.use("/api/users" , userRoutes);
 app.use("/api/products" , productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/checkout", checkoutRoutes);
+app.use("/api/orders", orderRoutes);
 
 
 app.listen(PORT, () => {
